@@ -12,7 +12,7 @@ const FileUpload = () => {
   const router = useRouter()
   const [ uploading, setUploading ] = useState(false)
 
-  const { mutate, isLoading } = useMutation({
+  const { mutate, isPending } = useMutation({
     mutationFn: async ({ file_key, file_name }: { file_key: string, file_name: string }) => {
       const response = await axios.post('/api/create-chat', {
         file_key, file_name
@@ -65,7 +65,7 @@ const FileUpload = () => {
         'border-2 border-dashed rounded-xl cursor-pointer bg-gray-50 py-8 flex flex-col justify-center items-center'
     }) }>
       <input { ...getInputProps() } />
-      { uploading || isLoading ? (
+      { uploading || isPending ? (
         <>
           {/* Loading state */ }
           <Loader2 className="w-10 h-10 text-blue-500 animate-spin" />
