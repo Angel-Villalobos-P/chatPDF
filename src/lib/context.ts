@@ -1,5 +1,5 @@
 import { convertToAscii } from '@/utils/utils'
-import { getPineconeClient } from './pinecone'
+
 import { getEmbeddings } from './embeddings'
 import { Pinecone } from '@pinecone-database/pinecone'
 
