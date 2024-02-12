@@ -8,7 +8,7 @@ import { Toaster } from 'react-hot-toast'
 const inter = Inter({ subsets: [ 'latin' ] })
 
 export const metadata: Metadata = {
-  title: 'ChatCognitus',
+  title: 'CognitusChat',
   description: 'It allows you to have a document-based chatbot',
 }
 

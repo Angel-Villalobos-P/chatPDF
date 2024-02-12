@@ -10,6 +10,13 @@ export const runtime = 'edge'
 
 const openai = new OpenAI()
 
+/**
+ * Handles the POST request for the chat route.
+ * 
+ * @param req - The request object.
+ * @returns A StreamingTextResponse object.
+ * @throws Throws an error if an error occurs during the process.
+ */
 export async function POST(req: Request) {
     try {
         const { messages, chatId } = await req.json()

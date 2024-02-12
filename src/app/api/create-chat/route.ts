@@ -7,6 +7,13 @@ import { getS3Url } from "@/lib/s3"
 import { auth } from "@clerk/nextjs"
 import { NextResponse } from "next/server"
 
+/**
+ * Handles the POST request for creating a chat.
+ * 
+ * @param req - The request object.
+ * @param res - The response object.
+ * @returns A JSON response with the chat ID if successful, or an error response if unsuccessful.
+ */
 export async function POST(req: Request, res: Response) {
     const { userId } = auth()
     if (!userId) {

@@ -39,7 +39,7 @@ export default async function Home() {
             </div>
           </div>
           <p className='max-w-xl mt-1 text-lg text-slate-600'>
-            By uploading documents or leveraging website information, ChatSignitus is designed to empower companies to
+            By uploading documents or leveraging website information, CognitusChat is designed to empower companies to
             effortlessly enable a responsive chatbot that provides users with accurate and personalized responses.
           </p>
           <div className="w-full mt-4">
